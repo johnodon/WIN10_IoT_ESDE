@@ -39,6 +39,14 @@ Regedit
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 Shell = path to esde exe
 
+set password to never expire
+Press Win + R to open Run.
+Type gpedit.msc and click OK to open Group Policy Editor.
+In Group Policy Editor, navigate to the following location:
+Computer Configuration > Windows Settings > Security Settings > Account Policies > Password Policy
+In the right pane, right-click on the Maximum password age policy and select Properties.
+Set value to 0.
+
 Connect DS4 controllers via BT
 Install DS4Windows and HIDHide
 Allow DS4W in HidHide
